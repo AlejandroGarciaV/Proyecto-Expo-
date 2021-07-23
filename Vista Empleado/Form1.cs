@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Controlador;
 
 namespace Vista_Empleado
 {
@@ -110,5 +111,6 @@ namespace Vista_Empleado
         {
             AbirFormEnPanel(new PeticionesRetiro());
         }
+        
     }
 }

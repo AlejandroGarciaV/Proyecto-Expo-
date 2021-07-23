@@ -41,3 +41,5 @@ C:\Users\User\Desktop\Alejandro 2021\Proyecto expo\Vista Empleado\Vista Empleado
 C:\Users\User\Desktop\Alejandro 2021\Proyecto expo\Vista Empleado\Vista Empleado\obj\Debug\Vista Empleado.exe
 C:\Users\User\Desktop\Alejandro 2021\Proyecto expo\Vista Empleado\Vista Empleado\obj\Debug\Vista Empleado.pdb
 C:\Users\User\Desktop\Proyecto expo\Vista Empleado\Vista Empleado\obj\Debug\Vista_Empleado.Usuarios.resources
+C:\Users\User\Desktop\Proyecto expo\Vista Empleado\Vista Empleado\bin\Debug\Modelo.dll
+C:\Users\User\Desktop\Proyecto expo\Vista Empleado\Vista Empleado\bin\Debug\Modelo.pdb
