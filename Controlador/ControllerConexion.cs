@@ -15,11 +15,5 @@ namespace Controlador
         { 
             return ModeloConexión.getConnect();
         }
-
-        public static MySqlConnection Conectar_Modelo()
-        {
-            return ModeloConexión.getConnect();
-        }
-                
     }
 }

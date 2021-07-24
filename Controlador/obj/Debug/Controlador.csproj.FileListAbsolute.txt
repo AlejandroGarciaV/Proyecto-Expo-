@@ -33,3 +33,15 @@ C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\Google.Protob
 C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\Modelo.pdb
 C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\MySql.Data.xml
 C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\bin\Debug\Controlador.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\bin\Debug\Controlador.pdb
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\bin\Debug\Modelo.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\bin\Debug\MySql.Data.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\bin\Debug\Modelo.pdb
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\bin\Debug\MySql.Data.xml
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\obj\Debug\Controlador.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\obj\Debug\Controlador.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-4\Controlador\obj\Debug\Controlador.pdb
