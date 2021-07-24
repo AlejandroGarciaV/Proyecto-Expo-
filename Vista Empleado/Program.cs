@@ -16,7 +16,7 @@ namespace Vista_Empleado
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRegistroVehi());
+            Application.Run(new Form1());
         }
     }
 }

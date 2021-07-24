@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerCarrosConf.cs" />
     <Compile Include="ControllerConexion.cs" />
     <Compile Include="ControllerRegistroVehi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -113,6 +113,16 @@ namespace Vista_Empleado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Clean_up {
+            get {
+                object obj = ResourceManager.GetObject("Clean up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cuadro {
             get {
                 object obj = ResourceManager.GetObject("Cuadro", resourceCulture);

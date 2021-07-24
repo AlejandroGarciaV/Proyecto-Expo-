@@ -28,218 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBuscarV = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dgvVehiculosConf = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtmatriculaCarro = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbEstadoCarro = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtIdinforme = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtmatriculaconf = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLimpiarConfi = new System.Windows.Forms.Button();
+            this.btnEliminarConfi = new System.Windows.Forms.Button();
             this.btnActualizarEstadoV = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.btnBuscarV = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehiculosConf)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // dgvVehiculosConf
+            // 
+            this.dgvVehiculosConf.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dgvVehiculosConf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVehiculosConf.Location = new System.Drawing.Point(12, 202);
+            this.dgvVehiculosConf.Name = "dgvVehiculosConf";
+            this.dgvVehiculosConf.Size = new System.Drawing.Size(1010, 305);
+            this.dgvVehiculosConf.TabIndex = 2;
+            this.dgvVehiculosConf.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVehiculosConf_CellClick);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox2.Controls.Add(this.btnLimpiarConfi);
+            this.groupBox2.Controls.Add(this.btnEliminarConfi);
+            this.groupBox2.Controls.Add(this.txtmatriculaCarro);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.cmbEstadoCarro);
+            this.groupBox2.Controls.Add(this.btnActualizarEstadoV);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.txtIdinforme);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Location = new System.Drawing.Point(460, 64);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(523, 123);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Actualizar estado";
+            // 
+            // txtmatriculaCarro
+            // 
+            this.txtmatriculaCarro.Location = new System.Drawing.Point(27, 40);
+            this.txtmatriculaCarro.Name = "txtmatriculaCarro";
+            this.txtmatriculaCarro.ReadOnly = true;
+            this.txtmatriculaCarro.Size = new System.Drawing.Size(89, 20);
+            this.txtmatriculaCarro.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Matricula";
+            // 
+            // cmbEstadoCarro
+            // 
+            this.cmbEstadoCarro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstadoCarro.FormattingEnabled = true;
+            this.cmbEstadoCarro.Location = new System.Drawing.Point(208, 39);
+            this.cmbEstadoCarro.Name = "cmbEstadoCarro";
+            this.cmbEstadoCarro.Size = new System.Drawing.Size(113, 21);
+            this.cmbEstadoCarro.TabIndex = 10;
+            this.cmbEstadoCarro.Click += new System.EventHandler(this.cmbEstadoCarro_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(205, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Estado";
+            // 
+            // txtIdinforme
+            // 
+            this.txtIdinforme.Location = new System.Drawing.Point(399, 40);
+            this.txtIdinforme.Name = "txtIdinforme";
+            this.txtIdinforme.ReadOnly = true;
+            this.txtIdinforme.Size = new System.Drawing.Size(89, 20);
+            this.txtIdinforme.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(396, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "N°Informe";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.Controls.Add(this.txtmatriculaconf);
+            this.groupBox1.Controls.Add(this.btnBuscarV);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(49, 78);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(394, 109);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Busqueda de Vehículos";
+            // 
+            // txtmatriculaconf
+            // 
+            this.txtmatriculaconf.Location = new System.Drawing.Point(77, 54);
+            this.txtmatriculaconf.Name = "txtmatriculaconf";
+            this.txtmatriculaconf.Size = new System.Drawing.Size(155, 20);
+            this.txtmatriculaconf.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Matricula";
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(386, 27);
+            this.label1.Location = new System.Drawing.Point(383, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(217, 25);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Vehículos Confiscados ";
             // 
-            // dataGridView1
+            // btnLimpiarConfi
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 202);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1010, 305);
-            this.dataGridView1.TabIndex = 2;
+            this.btnLimpiarConfi.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLimpiarConfi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(224)))));
+            this.btnLimpiarConfi.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarConfi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnLimpiarConfi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarConfi.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarConfi.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarConfi.Image = global::Vista_Empleado.Properties.Resources.Clean_up;
+            this.btnLimpiarConfi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiarConfi.Location = new System.Drawing.Point(358, 80);
+            this.btnLimpiarConfi.Name = "btnLimpiarConfi";
+            this.btnLimpiarConfi.Size = new System.Drawing.Size(149, 37);
+            this.btnLimpiarConfi.TabIndex = 12;
+            this.btnLimpiarConfi.Text = "Limpiar campos";
+            this.btnLimpiarConfi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiarConfi.UseVisualStyleBackColor = false;
+            this.btnLimpiarConfi.Click += new System.EventHandler(this.btnLimpiarConfi_Click);
             // 
-            // label2
+            // btnEliminarConfi
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(198, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Matricula";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.btnBuscarV);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 87);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(528, 109);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Busqueda de Vehículos";
-            // 
-            // btnBuscarV
-            // 
-            this.btnBuscarV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBuscarV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(224)))));
-            this.btnBuscarV.FlatAppearance.BorderSize = 0;
-            this.btnBuscarV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnBuscarV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarV.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarV.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarV.Image = global::Vista_Empleado.Properties.Resources.search;
-            this.btnBuscarV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarV.Location = new System.Drawing.Point(399, 40);
-            this.btnBuscarV.Name = "btnBuscarV";
-            this.btnBuscarV.Size = new System.Drawing.Size(123, 40);
-            this.btnBuscarV.TabIndex = 6;
-            this.btnBuscarV.Text = "Buscar";
-            this.btnBuscarV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscarV.UseVisualStyleBackColor = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(24, 40);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(116, 20);
-            this.textBox4.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(6, 83);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(89, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(201, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(198, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Apellido Agente";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Nombre Agente";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 67);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "N°Informe";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 24);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Matricula";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox2.Controls.Add(this.btnActualizarEstadoV);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Location = new System.Drawing.Point(546, 87);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(476, 109);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Actualizar estado";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(201, 83);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(116, 20);
-            this.textBox5.TabIndex = 5;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(178, 40);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(89, 20);
-            this.textBox6.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(175, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "N°Informe";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Estado";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 82);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(113, 21);
-            this.comboBox1.TabIndex = 10;
+            this.btnEliminarConfi.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEliminarConfi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(224)))));
+            this.btnEliminarConfi.FlatAppearance.BorderSize = 0;
+            this.btnEliminarConfi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnEliminarConfi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarConfi.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarConfi.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarConfi.Image = global::Vista_Empleado.Properties.Resources.Dump;
+            this.btnEliminarConfi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarConfi.Location = new System.Drawing.Point(208, 80);
+            this.btnEliminarConfi.Name = "btnEliminarConfi";
+            this.btnEliminarConfi.Size = new System.Drawing.Size(113, 37);
+            this.btnEliminarConfi.TabIndex = 6;
+            this.btnEliminarConfi.Text = "Eliminar";
+            this.btnEliminarConfi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminarConfi.UseVisualStyleBackColor = false;
+            this.btnEliminarConfi.Click += new System.EventHandler(this.btnEliminarConfi_Click);
             // 
             // btnActualizarEstadoV
             // 
@@ -252,13 +222,34 @@
             this.btnActualizarEstadoV.ForeColor = System.Drawing.Color.White;
             this.btnActualizarEstadoV.Image = global::Vista_Empleado.Properties.Resources.Update;
             this.btnActualizarEstadoV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizarEstadoV.Location = new System.Drawing.Point(316, 40);
+            this.btnActualizarEstadoV.Location = new System.Drawing.Point(27, 80);
             this.btnActualizarEstadoV.Name = "btnActualizarEstadoV";
-            this.btnActualizarEstadoV.Size = new System.Drawing.Size(123, 40);
+            this.btnActualizarEstadoV.Size = new System.Drawing.Size(136, 37);
             this.btnActualizarEstadoV.TabIndex = 6;
             this.btnActualizarEstadoV.Text = "Actualizar";
             this.btnActualizarEstadoV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizarEstadoV.UseVisualStyleBackColor = false;
+            this.btnActualizarEstadoV.Click += new System.EventHandler(this.btnActualizarEstadoV_Click);
+            // 
+            // btnBuscarV
+            // 
+            this.btnBuscarV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBuscarV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(224)))));
+            this.btnBuscarV.FlatAppearance.BorderSize = 0;
+            this.btnBuscarV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnBuscarV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarV.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarV.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarV.Image = global::Vista_Empleado.Properties.Resources.search;
+            this.btnBuscarV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarV.Location = new System.Drawing.Point(247, 43);
+            this.btnBuscarV.Name = "btnBuscarV";
+            this.btnBuscarV.Size = new System.Drawing.Size(123, 40);
+            this.btnBuscarV.TabIndex = 6;
+            this.btnBuscarV.Text = "Buscar";
+            this.btnBuscarV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarV.UseVisualStyleBackColor = false;
+            this.btnBuscarV.Click += new System.EventHandler(this.btnBuscarV_Click);
             // 
             // Vehiculos_Conf
             // 
@@ -267,42 +258,38 @@
             this.ClientSize = new System.Drawing.Size(1034, 561);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvVehiculosConf);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Vehiculos_Conf";
             this.Text = "Vehiculos_Conf";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.Vehiculos_Conf_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehiculosConf)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btnBuscarV;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgvVehiculosConf;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnLimpiarConfi;
+        private System.Windows.Forms.Button btnEliminarConfi;
+        private System.Windows.Forms.TextBox txtmatriculaCarro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbEstadoCarro;
         private System.Windows.Forms.Button btnActualizarEstadoV;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtIdinforme;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtmatriculaconf;
+        private System.Windows.Forms.Button btnBuscarV;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
