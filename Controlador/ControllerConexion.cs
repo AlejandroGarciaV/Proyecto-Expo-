@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
+using Modelo;
 
 namespace Controlador
 {
@@ -11,7 +13,13 @@ namespace Controlador
     {
         public static MySqlConnection ConnectController()
         { 
-            return Modelo.ModeloConexión.getConnect();
+            return ModeloConexión.getConnect();
         }
+
+        public static MySqlConnection Conectar_Modelo()
+        {
+            return ModeloConexión.getConnect();
+        }
+                
     }
 }

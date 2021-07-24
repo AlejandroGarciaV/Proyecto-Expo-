@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controlador",
+    "\\Modelo",
+    "\\Vista Empleado"
   ],
+  "SelectedNode": "\\Vista Empleado.sln",
   "PreviewInSolutionExplorer": false
 }

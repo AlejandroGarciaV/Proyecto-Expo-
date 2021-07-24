@@ -22,3 +22,14 @@ C:\Users\User\Desktop\Alejandro 2021\Proyecto expo\Vista Empleado\Controlador\ob
 C:\Users\User\Desktop\Alejandro 2021\Proyecto expo\Vista Empleado\Controlador\obj\Debug\Controlador.csproj.CopyComplete
 C:\Users\User\Desktop\Alejandro 2021\Proyecto expo\Vista Empleado\Controlador\obj\Debug\Controlador.dll
 C:\Users\User\Desktop\Alejandro 2021\Proyecto expo\Vista Empleado\Controlador\obj\Debug\Controlador.pdb
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\obj\Debug\Controlador.csprojAssemblyReference.cache
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\obj\Debug\Controlador.dll
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\obj\Debug\Controlador.pdb
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\Controlador.dll
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\Controlador.pdb
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\Modelo.dll
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\Google.Protobuf.dll
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\Modelo.pdb
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\bin\Debug\MySql.Data.xml
+C:\Users\USUARIO\Source\Repos\Proyecto-Expo-\Controlador\obj\Debug\Controlador.csproj.CopyComplete
