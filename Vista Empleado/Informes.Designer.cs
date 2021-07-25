@@ -28,18 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBuscarInfor = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.sisconfiscacioncarrosDataSet = new Vista_Empleado.sisconfiscacioncarrosDataSet();
+            this.informeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.informeTableAdapter = new Vista_Empleado.sisconfiscacioncarrosDataSetTableAdapters.informeTableAdapter();
+            this.idInformeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idVehiculoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idRazonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idAgenteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechahoraconfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sisconfiscacioncarrosDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +63,16 @@
             // dataGridView1
             // 
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idInformeDataGridViewTextBoxColumn,
+            this.idVehiculoDataGridViewTextBoxColumn,
+            this.idRazonDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn,
+            this.idAgenteDataGridViewTextBoxColumn,
+            this.fechahoraconfDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.informeBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(39, 219);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(946, 268);
@@ -65,13 +81,8 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox1.Controls.Add(this.btnBuscarInfor);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(39, 93);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(946, 109);
@@ -79,54 +90,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Busqueda de Vehículos";
             // 
-            // btnBuscarInfor
-            // 
-            this.btnBuscarInfor.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBuscarInfor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(224)))));
-            this.btnBuscarInfor.FlatAppearance.BorderSize = 0;
-            this.btnBuscarInfor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnBuscarInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarInfor.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarInfor.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarInfor.Image = global::Vista_Empleado.Properties.Resources.search;
-            this.btnBuscarInfor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarInfor.Location = new System.Drawing.Point(737, 42);
-            this.btnBuscarInfor.Name = "btnBuscarInfor";
-            this.btnBuscarInfor.Size = new System.Drawing.Size(123, 40);
-            this.btnBuscarInfor.TabIndex = 6;
-            this.btnBuscarInfor.Text = "Buscar";
-            this.btnBuscarInfor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscarInfor.UseVisualStyleBackColor = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(426, 62);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(116, 20);
-            this.textBox4.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(224, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 20);
-            this.textBox2.TabIndex = 4;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(30, 62);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 20);
+            this.textBox1.Size = new System.Drawing.Size(415, 20);
             this.textBox1.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(221, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Apellido Agente";
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // label3
             // 
@@ -137,14 +107,55 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Nombre Agente";
             // 
-            // label2
+            // sisconfiscacioncarrosDataSet
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(423, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Matricula";
+            this.sisconfiscacioncarrosDataSet.DataSetName = "sisconfiscacioncarrosDataSet";
+            this.sisconfiscacioncarrosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // informeBindingSource
+            // 
+            this.informeBindingSource.DataMember = "informe";
+            this.informeBindingSource.DataSource = this.sisconfiscacioncarrosDataSet;
+            // 
+            // informeTableAdapter
+            // 
+            this.informeTableAdapter.ClearBeforeFill = true;
+            // 
+            // idInformeDataGridViewTextBoxColumn
+            // 
+            this.idInformeDataGridViewTextBoxColumn.DataPropertyName = "idInforme";
+            this.idInformeDataGridViewTextBoxColumn.HeaderText = "idInforme";
+            this.idInformeDataGridViewTextBoxColumn.Name = "idInformeDataGridViewTextBoxColumn";
+            // 
+            // idVehiculoDataGridViewTextBoxColumn
+            // 
+            this.idVehiculoDataGridViewTextBoxColumn.DataPropertyName = "idVehiculo";
+            this.idVehiculoDataGridViewTextBoxColumn.HeaderText = "idVehiculo";
+            this.idVehiculoDataGridViewTextBoxColumn.Name = "idVehiculoDataGridViewTextBoxColumn";
+            // 
+            // idRazonDataGridViewTextBoxColumn
+            // 
+            this.idRazonDataGridViewTextBoxColumn.DataPropertyName = "idRazon";
+            this.idRazonDataGridViewTextBoxColumn.HeaderText = "idRazon";
+            this.idRazonDataGridViewTextBoxColumn.Name = "idRazonDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
+            // idAgenteDataGridViewTextBoxColumn
+            // 
+            this.idAgenteDataGridViewTextBoxColumn.DataPropertyName = "idAgente";
+            this.idAgenteDataGridViewTextBoxColumn.HeaderText = "idAgente";
+            this.idAgenteDataGridViewTextBoxColumn.Name = "idAgenteDataGridViewTextBoxColumn";
+            // 
+            // fechahoraconfDataGridViewTextBoxColumn
+            // 
+            this.fechahoraconfDataGridViewTextBoxColumn.DataPropertyName = "Fecha_hora_conf";
+            this.fechahoraconfDataGridViewTextBoxColumn.HeaderText = "Fecha_hora_conf";
+            this.fechahoraconfDataGridViewTextBoxColumn.Name = "fechahoraconfDataGridViewTextBoxColumn";
             // 
             // Informes
             // 
@@ -157,9 +168,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Informes";
             this.Text = "Informes";
+            this.Load += new System.EventHandler(this.Informes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sisconfiscacioncarrosDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,12 +184,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnBuscarInfor;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private sisconfiscacioncarrosDataSet sisconfiscacioncarrosDataSet;
+        private System.Windows.Forms.BindingSource informeBindingSource;
+        private sisconfiscacioncarrosDataSetTableAdapters.informeTableAdapter informeTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idInformeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idVehiculoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idRazonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idAgenteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechahoraconfDataGridViewTextBoxColumn;
     }
 }

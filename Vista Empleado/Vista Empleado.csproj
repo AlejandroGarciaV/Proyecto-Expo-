@@ -97,6 +97,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="sisconfiscacioncarrosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sisconfiscacioncarrosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Sucursales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +165,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sisconfiscacioncarrosDataSet.xsc">
+      <DependentUpon>sisconfiscacioncarrosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sisconfiscacioncarrosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sisconfiscacioncarrosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sisconfiscacioncarrosDataSet.xss">
+      <DependentUpon>sisconfiscacioncarrosDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
