@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.linkContraseña = new System.Windows.Forms.LinkLabel();
             this.btnMinimizarL = new System.Windows.Forms.PictureBox();
             this.btnCerrarL = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.lblerror = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizarL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,6 +54,16 @@
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Vista_Empleado.Properties.Resources.escudo_de_El_Salvador;
+            this.pictureBox3.Location = new System.Drawing.Point(48, 76);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(155, 131);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // label1
             // 
@@ -92,6 +103,7 @@
             this.btnAcceder.TabIndex = 3;
             this.btnAcceder.Text = "ACCEDER";
             this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // linkContraseña
             // 
@@ -128,16 +140,6 @@
             this.btnCerrarL.TabStop = false;
             this.btnCerrarL.Click += new System.EventHandler(this.btnCerrarL_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Vista_Empleado.Properties.Resources.escudo_de_El_Salvador;
-            this.pictureBox3.Location = new System.Drawing.Point(48, 76);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(155, 131);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // txtContraseña
             // 
             this.txtContraseña.BackColor = System.Drawing.SystemColors.Control;
@@ -151,12 +153,24 @@
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
             this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
+            // lblerror
+            // 
+            this.lblerror.AutoSize = true;
+            this.lblerror.Location = new System.Drawing.Point(320, 194);
+            this.lblerror.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblerror.Name = "lblerror";
+            this.lblerror.Size = new System.Drawing.Size(46, 13);
+            this.lblerror.TabIndex = 11;
+            this.lblerror.Text = "ERROR";
+            this.lblerror.Visible = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.lblerror);
             this.Controls.Add(this.btnMinimizarL);
             this.Controls.Add(this.btnCerrarL);
             this.Controls.Add(this.linkContraseña);
@@ -172,9 +186,9 @@
             this.Text = "Login";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizarL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +205,6 @@
         private System.Windows.Forms.PictureBox btnCerrarL;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Label lblerror;
     }
 }

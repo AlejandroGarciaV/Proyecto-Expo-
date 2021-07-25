@@ -141,3 +141,27 @@ C:\Users\diego\Source\Repos\Proyecto-Expo-1\Vista Empleado\obj\Debug\Vista Emple
 C:\Users\diego\Source\Repos\Proyecto-Expo-1\Vista Empleado\obj\Debug\Vista Empleado.csproj.CopyComplete
 C:\Users\diego\Source\Repos\Proyecto-Expo-1\Vista Empleado\obj\Debug\Vista Empleado.exe
 C:\Users\diego\Source\Repos\Proyecto-Expo-1\Vista Empleado\obj\Debug\Vista Empleado.pdb
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Vista Empleado.exe.config
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Vista Empleado.exe
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Vista Empleado.pdb
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Controlador.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\MySql.Data.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Modelo.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Controlador.pdb
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\MySql.Data.xml
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\bin\Debug\Modelo.pdb
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista Empleado.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.Form1.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.FrmRegistroVehi.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.Informes.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.inicio.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.Login.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.Properties.Resources.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.Usuarios.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista_Empleado.Vehiculos_Conf.resources
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista Empleado.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista Empleado.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista Empleado.csproj.CopyComplete
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista Empleado.exe
+C:\Users\User\Source\Repos\Proyecto-Expo-5\Vista Empleado\obj\Debug\Vista Empleado.pdb

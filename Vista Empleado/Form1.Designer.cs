@@ -36,7 +36,6 @@
             this.Logo2 = new System.Windows.Forms.PictureBox();
             this.btnInformes = new System.Windows.Forms.Button();
             this.btnVehi_Conf = new System.Windows.Forms.Button();
-            this.btnSucursales = new System.Windows.Forms.Button();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.Minimizartamaño = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
@@ -66,7 +65,6 @@
             this.MenuVertical.Controls.Add(this.Logo2);
             this.MenuVertical.Controls.Add(this.btnInformes);
             this.MenuVertical.Controls.Add(this.btnVehi_Conf);
-            this.MenuVertical.Controls.Add(this.btnSucursales);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Name = "MenuVertical";
@@ -83,7 +81,7 @@
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
             this.btnUsuarios.Image = global::Vista_Empleado.Properties.Resources.User;
             this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(12, 457);
+            this.btnUsuarios.Location = new System.Drawing.Point(12, 408);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(226, 40);
             this.btnUsuarios.TabIndex = 10;
@@ -112,7 +110,7 @@
             this.btnInicio.ForeColor = System.Drawing.Color.White;
             this.btnInicio.Image = global::Vista_Empleado.Properties.Resources.Home;
             this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Location = new System.Drawing.Point(12, 273);
+            this.btnInicio.Location = new System.Drawing.Point(12, 270);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(226, 40);
             this.btnInicio.TabIndex = 8;
@@ -151,7 +149,7 @@
             this.btnInformes.ForeColor = System.Drawing.Color.White;
             this.btnInformes.Image = global::Vista_Empleado.Properties.Resources.Report;
             this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.Location = new System.Drawing.Point(12, 411);
+            this.btnInformes.Location = new System.Drawing.Point(12, 362);
             this.btnInformes.Name = "btnInformes";
             this.btnInformes.Size = new System.Drawing.Size(226, 40);
             this.btnInformes.TabIndex = 6;
@@ -169,7 +167,7 @@
             this.btnVehi_Conf.ForeColor = System.Drawing.Color.White;
             this.btnVehi_Conf.Image = global::Vista_Empleado.Properties.Resources.Carro_Conf;
             this.btnVehi_Conf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVehi_Conf.Location = new System.Drawing.Point(12, 365);
+            this.btnVehi_Conf.Location = new System.Drawing.Point(12, 316);
             this.btnVehi_Conf.Name = "btnVehi_Conf";
             this.btnVehi_Conf.Size = new System.Drawing.Size(226, 40);
             this.btnVehi_Conf.TabIndex = 5;
@@ -177,24 +175,6 @@
             this.btnVehi_Conf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVehi_Conf.UseVisualStyleBackColor = true;
             this.btnVehi_Conf.Click += new System.EventHandler(this.btnVehi_Conf_Click);
-            // 
-            // btnSucursales
-            // 
-            this.btnSucursales.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnSucursales.FlatAppearance.BorderSize = 0;
-            this.btnSucursales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSucursales.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucursales.ForeColor = System.Drawing.Color.White;
-            this.btnSucursales.Image = global::Vista_Empleado.Properties.Resources.Branch_office;
-            this.btnSucursales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSucursales.Location = new System.Drawing.Point(12, 319);
-            this.btnSucursales.Name = "btnSucursales";
-            this.btnSucursales.Size = new System.Drawing.Size(226, 40);
-            this.btnSucursales.TabIndex = 4;
-            this.btnSucursales.Text = "Sucursales";
-            this.btnSucursales.UseVisualStyleBackColor = true;
-            this.btnSucursales.Click += new System.EventHandler(this.btnSucursales_Click);
             // 
             // BarraTitulo
             // 
@@ -321,7 +301,6 @@
         private System.Windows.Forms.PictureBox Minimizar;
         private System.Windows.Forms.PictureBox Maximizar;
         private System.Windows.Forms.PictureBox Minimizartamaño;
-        private System.Windows.Forms.Button btnSucursales;
         private System.Windows.Forms.Button btnInformes;
         private System.Windows.Forms.Button btnVehi_Conf;
         private System.Windows.Forms.PictureBox Logo2;

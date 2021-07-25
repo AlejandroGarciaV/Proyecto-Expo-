@@ -35,7 +35,7 @@ namespace Vista_Empleado
 
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
-            if (txtUsuario.Text=="")
+            if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "USUARIO";
                 txtUsuario.ForeColor = Color.Gray;
@@ -83,5 +83,103 @@ namespace Vista_Empleado
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            string contraseña = txtContraseña.Text;
+            string usuario = txtUsuario.Text;
+
+            if (txtUsuario.Text != "USUARIO")
+            {
+                if (txtContraseña.Text != "CONTRASEÑA")
+                {
+
+                }
+                else msgerror("Porfavor ingrese la contraseña");
+
+            }
+            else msgerror("Porfavor ingrese el usuario");
+
+            if (usuario != "admin")
+            {
+                if (contraseña != "admin123")
+                {
+
+                }
+                else
+                {
+                    Form formulario = new Form1();
+                    formulario.Hide();
+                }
+            }
+            else if (contraseña == "admin123")
+            {
+                Form formulario = new Form1();
+                formulario.Show();
+                this.Hide();
+            }
+
+            if (usuario != "admin2")
+            {
+                if (contraseña != "admin456")
+                {
+
+                }
+                else
+                {
+                    Form formulario = new Form1();
+                    formulario.Hide();
+                }
+            }
+            else if (contraseña == "admin456")
+            {
+                Form formulario = new Form1();
+                formulario.Show();
+                this.Hide();
+            }
+
+            if (usuario != "agente")
+            {
+                if (contraseña != "agente123")
+                {
+
+                }
+                else
+                {
+                    Form formulario = new Form1();
+                    formulario.Hide();
+                }
+            }
+            else if (contraseña == "agente123")
+            {
+                Form formulario = new FrmRegistroVehi();
+                formulario.Show();
+                this.Hide();
+            }
+
+            if (usuario != "agente2")
+            {
+                if (contraseña != "agente456")
+                {
+
+                }
+                else
+                {
+                    Form formulario = new Form1();
+                    formulario.Hide();
+                }
+            }
+            else if (contraseña == "agente456")
+            {
+                Form formulario = new FrmRegistroVehi();
+                formulario.Show();
+                this.Hide();
+            }
+        }
+        private void msgerror(string msg)
+            {
+                lblerror.Text = "     " + msg;
+                lblerror.Visible = true;
+            }
     }
 }

@@ -106,11 +106,7 @@ namespace Vista_Empleado
         {
             AbirFormEnPanel(new Usuarios());
         }
-
-        private void btnSucursales_Click(object sender, EventArgs e)
-        {
-            AbirFormEnPanel(new PeticionesRetiro());
-        }
+        
         
     }
 }
