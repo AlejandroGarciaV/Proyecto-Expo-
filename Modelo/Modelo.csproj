@@ -45,6 +45,7 @@
     <Compile Include="ModeloCarroConf.cs" />
     <Compile Include="ModeloConexión.cs" />
     <Compile Include="ModelRegistroVehi.cs" />
+    <Compile Include="ModelUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -102,7 +102,7 @@ namespace Modelo
             bool retorno;
             try
             {
-                MySqlCommand cmddel = new MySqlCommand(string.Format("DELETE FROM vehiculo WHERE idVehiculo = '" + idinforme + "'"), ModeloConexión.getConnect());
+                MySqlCommand cmddel = new MySqlCommand(string.Format("DELETE FROM vehiculo WHERE idVehiculo ='" + idinforme + "'"), ModeloConexión.getConnect());
                 retorno = Convert.ToBoolean(cmddel.ExecuteNonQuery());
                 return retorno;
             }
